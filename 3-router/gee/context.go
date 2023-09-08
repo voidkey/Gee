@@ -9,10 +9,16 @@ import (
 type H map[string]interface{}
 
 type Context struct {
-	Writer     http.ResponseWriter
-	Req        *http.Request
-	Path       string
-	Method     string
+	//origin objects
+	Writer http.ResponseWriter
+	Req    *http.Request
+
+	//request info
+	Path   string
+	Method string
+	Params map[string]string
+
+	//response info
 	StatusCode int
 }
 
@@ -67,4 +73,9 @@ func (ctx *Context) HTML(code int, html string) {
 	ctx.SetHeader("Content-Type", "text/html")
 	ctx.Status(code)
 	ctx.Writer.Write([]byte(html))
+}
+
+func (ctx *Context) Param(key string) string {
+	value := ctx.Params[key]
+	return value
 }

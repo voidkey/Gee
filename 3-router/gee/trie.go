@@ -85,6 +85,7 @@ func (n *node) matchChildren(part string) []*node {
 	}
 	return nodes
 }
+
 func (n *node) insert(pattern string, parts []string, height int) {
 	if len(parts) == height {
 		n.pattern = pattern
