@@ -3,4 +3,5 @@ go 1.21.0
 use (
 	./1-http-base/base3
 	./2-context
+	./3-router
 )
