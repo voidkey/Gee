@@ -4,4 +4,5 @@ use (
 	./1-http-base/base3
 	./2-context
 	./3-router
+	./4-group
 )
