@@ -5,4 +5,5 @@ use (
 	./2-context
 	./3-router
 	./4-group
+	./5-middleware
 )
