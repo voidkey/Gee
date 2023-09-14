@@ -6,4 +6,5 @@ use (
 	./3-router
 	./4-group
 	./5-middleware
+	./6-template
 )
