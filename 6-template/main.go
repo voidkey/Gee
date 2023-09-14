@@ -42,7 +42,7 @@ func main() {
 	r.GET("/date", func(c *gee.Context) {
 		c.HTML(http.StatusOK, "custom_func.tmpl", gee.H{
 			"title": "gee",
-			"now":   time.Date(2019, 8, 17, 0, 0, 0, 0, time.UTC),
+			"now":   time.Date(2023, 13, 15, 0, 0, 0, 0, time.UTC),
 		})
 	})
 

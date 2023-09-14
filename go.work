@@ -7,4 +7,5 @@ use (
 	./4-group
 	./5-middleware
 	./6-template
+	./7-panic-recover
 )
