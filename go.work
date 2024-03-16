@@ -8,4 +8,11 @@ use (
 	./5-middleware
 	./6-template
 	./7-panic-recover
+	./8-geeRPC/1-codec
+	./8-geeRPC/2-client
+	./8-geeRPC/3-service
+	./8-geeRPC/4-timeout
+	./8-geeRPC/5-http-debug
+	./8-geeRPC/6-load-balance
+	./8-geeRPC/7-registry
 )
